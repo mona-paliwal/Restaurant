@@ -1,0 +1,310 @@
+@media only screen and (max-width: 767px) {
+
+/*------- Common CSS Starts -------*/
+
+body.active { overflow: hidden; }
+.container-fluid { padding: 30px 15px; }
+.display-block-mobile { display: block; }
+.display-none-mobile { display: none; }
+.section-heading > h2 { font-size: 4rem; line-height: 1.5; margin-bottom: 50px; }
+.read-more > a { padding: 10px 25px; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Starts -------*/
+
+.bg-logo-burger-menu-mobile { background-color: #000000; display: block; left: 0; padding: 5px 15px; position: fixed; top: 0; width: 100%; z-index: 10; }
+.header-logo-mobile > a { display: inline-block; }
+.header-logo-mobile > a > p { color: #bc906b; font: 3rem/1.2 "Birds-of-Paradise"; padding-top: 5px; }
+.header-logo-mobile > a > p > span { color: #ffffff; }
+
+    /*------- Mobile Hamburger Menu Section Starts -------*/
+
+.burger-menu { background-color: transparent; cursor: pointer; height: 50px; position: relative; width: 50px; }
+.burger-menu span { background-color: #bc906b; height: 2px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s linear 0.5s; -moz-transition: 0.5s linear 0.5s; -ms-transition: 0.5s linear 0.5s; -o-transition: 0.5s linear 0.5s; transition: 0.5s linear 0.5s; width: 25px; }
+.burger-menu span::before,
+.burger-menu span::after { background-color: #bc906b; content: ""; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 25px; }
+.burger-menu span::before { top: -10px; }
+.burger-menu.active span { background-color: transparent; -webkit-transition: 0s linear; -moz-transition: 0s linear; -ms-transition: 0s linear; -o-transition: 0s linear; transition: 0s linear; }
+.burger-menu.active span::before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.burger-menu.active span::after { top: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+	  /*------- Mobile Hamburger Menu Section Ends -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+  /*------- Mobile Navbar Menu Section Starts -------*/
+
+.fixed-navbar-menu-mobile { background-color: #000000; display: block; height: calc(100% - 60px); left: 0; position: fixed; top: 60px; -webkit-transition: 1s ease 0.5s; -moz-transition: 1s ease 0.5s; -ms-transition: 1s ease 0.5s; -o-transition: 1s ease 0.5s; transition: 1s ease 0.5s; width: 0; z-index: 10; }
+.fixed-navbar-menu-mobile.active { -webkit-transition: 1s ease 0s; -moz-transition: 1s ease 0s; -ms-transition: 1s ease 0s; -o-transition: 1s ease 0s; transition: 1s ease 0s; width: 240px; }
+.menu-listing-mobile { height: 100%; opacity: 0; overflow-y: auto; padding: 15px; -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; visibility: hidden; z-index: 10; }
+.menu-listing-mobile.active { opacity: 1; visibility: visible; -webkit-transition: 1s ease 0.75s; -moz-transition: 1s ease 0.75s; -ms-transition: 1s ease 0.75s; -o-transition: 1s ease 0.75s; transition: 1s ease 0.75s; }
+.menu-listing-mobile > li { display: block; margin-bottom: 20px; }
+.menu-listing-mobile > li:last-child { margin-bottom: 0; }
+.menu-listing-mobile > li > a { color: #ffffff; display: block; font: 1.8rem/1 "Quicksand-Regular"; }
+.menu-listing-mobile > li.active > a,
+.menu-listing-mobile > li > a:hover { color: #bc906b; }
+
+  /*------- Mobile Navbar Menu Section Ends -------*/
+
+  /*------- Desktop Logo and Navigationbar Menu Section Starts -------*/
+
+.bg-logo-navbar-menu-desktop { display: none; }
+
+  /*------- Desktop Logo and Navigationbar Menu Section Ends -------*/
+
+  /*------- Banner Section Starts -------*/
+
+.banner-info { padding: 30px 30px 45px; width: 85%; }
+.banner-info > h1 > span { font-size: 4rem; }
+.banner-info > h4 { font-size: 1.6rem; }
+.read-more-banner > a { font-size: 1.4rem; padding: 10px 15px; }
+
+  /*------- Banner Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.bg-about { padding: 15px 15px 30px; }
+.box-about-image-2 > img,
+.about-info > p { margin-bottom: 15px; }
+.about-info > p { text-align: justify; }
+.view-more-about,
+.view-more-gallery { margin: 30px 0 0; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Our Services Section Starts -------*/
+
+.bg-our-services { padding: 30px 15px 0; }
+.box-our-services-image > img { margin-bottom: 30px; }
+.box-services-info { padding: 0 0 30px; }
+.box-services-info > img { margin-bottom: 30px; }
+.box-services-info > h3 { font-size: 3rem; }
+
+  /*------- Our Services Section Ends -------*/
+
+  /*------- Our Menu Section Starts -------*/
+
+.bg-our-menu { padding: 0 15px 30px; }
+.media-our-menu { -webkit-align-items: flex-start; align-items: flex-start; }
+.media-body-our-menu > h4 { margin-bottom: 15px; }
+
+  /*------- Our Menu Section Ends -------*/
+
+  /*------- Special Occasions Section Starts -------*/
+
+.bg-special-occasions { height: 75vh; }
+.special-occasions-info { padding: 20px; width: 90%; }
+.special-occasions-info > h3 { font-size: 1.8rem; margin-bottom: 20px; }
+.special-occasions-info > h2 { font-size: 4rem; margin-bottom: 20px; }
+
+  /*------- Special Occasions Section Ends -------*/
+
+  /*------- Our Gallery Section Starts -------*/
+
+.box-our-gallery { margin-bottom: 15px; }
+.view-more-gallery { margin: 30px 0 0; }
+
+  /*------- Our Gallery Section Ends -------*/
+
+  /*------- Our Experienced Chefs Section Starts -------*/
+
+.bg-our-experienced-chefs { margin-bottom: 0; }
+.box-our-chef { margin-bottom: 15px; }
+.view-more-chefs { margin: 30px 0; }
+
+  /*------- Our Experienced Chefs Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.bg-footer { position: static; }
+.footer-logo > a > p { font-size: 4rem; }
+.footer-desc > p { margin: 0 auto 30px; width: 100%; }
+.footer-heading > h3 { font-size: 3rem; }
+.footer-contact-listing > li:last-child,
+.footer-social-listing { margin-bottom: 30px; }
+.footer-social-listing > li { margin-right: 20px; }
+.footer-contact-listing > li:first-child::before,
+.footer-contact-listing > li:nth-child(2)::before,
+.footer-contact-listing > li:nth-child(3)::before { top: 2px; }
+.copyright-info > p { font-size: 1.4rem; line-height: 1.7; margin-top: 15px; }
+
+  /*------- Footer Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- About Page Starts -------*/
+
+  /*------- Banner Section Starts -------*/
+
+.bg-banner-inner-page { padding: 0; }
+.banner-info-inner-page { text-align: center; width: 75%; }
+.banner-info-inner-page > h1 { font-size: 4rem; margin-top: 0; }
+.black-pattern-down-arrow { bottom: 0; }
+
+  /*------- Banner Section Ends -------*/
+
+  /*------- Information Section Starts -------*/
+
+.bg-about-info-ap { padding: 30px 15px 0; }
+.about-info-ap > h3 { font-size: 1.8rem; margin-bottom: 15px; }
+.about-info-ap > p { font-size: 5rem; margin-bottom: 30px; }
+.about-image-info-ap { padding: 30px 0; }
+
+  /*------- Information Section Ends -------*/
+
+  /*------- Testimonials Slider Section Starts -------*/
+
+.bg-testimonials-ap { margin-bottom: 0; padding: 0 15px 45px; }
+
+    /*------- Slick Slider Arrows CSS Starts -------*/
+
+.testimonials-slick-slider-ap.slick-dotted.slick-slider { margin-bottom: 0; } 
+.testimonials-slick-slider-ap .slick-dots { bottom: -30px; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); width: 100%; }
+.testimonials-slick-slider-ap .slick-dots li { cursor: pointer; display: inline-block; height: auto; margin: 0 5px; padding: 0; position: relative; width: auto; }
+.testimonials-slick-slider-ap .slick-dots li button { background-color: #bc906b; height: 12px; line-height: 12px; margin: 0; opacity: 0.5; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; width: 12px; }
+.testimonials-slick-slider-ap .slick-dots li.slick-active button { opacity: 1; width: 27px; }
+.testimonials-slick-slider-ap .slick-dots li button::before { content: ''; }
+
+    /*------- Slick Slider Arrows CSS Ends -------*/
+
+  /*------- Testimonials Slider Section Ends -------*/
+
+/*------- About Page Ends -------*/
+
+/*------- Our Chefs Page Starts -------*/
+
+  /*------- Our Experienced Chefs Section Starts -------*/
+
+.bg-our-experienced-chefs-ocp { margin-bottom: 0; padding: 30px 15px 0; }
+.our-chefs-info-ocp > h3 { font-size: 1.8rem; margin-bottom: 15px; }
+.our-chefs-info-ocp > p { font-size: 5rem; margin-bottom: 30px; }
+.our-chefs-hd-ocp > h2,
+.our-chefs-image-ocp,
+.our-chefs-hd-ocp { margin-bottom: 15px; }
+.our-chefs-hd-ocp { -webkit-transform: none !important; -moz-transform: none !important; -ms-transform: none !important; -o-transform: none !important; transform: none !important; }
+.our-chefs-left-hd-ocp { margin-left: 0; }
+.our-chefs-right-hd-ocp { margin-right: 0; text-align: left; }
+.our-chefs-right-hd-ocp > h2 > span { left: 0; right: auto; }
+
+  /*------- Our Experienced Chefs Section Ends -------*/
+
+/*------- Our Chefs Page Ends -------*/
+
+/*------- Our Menu Page Starts -------*/
+
+  /*------- Our Menu Section Starts -------*/
+
+.bg-our-menu-omp { margin-bottom: 0; padding: 30px 15px 0; }
+.box-our-menu { margin-bottom: 15px; }
+
+  /*------- Our Menu Section Ends -------*/
+
+/*------- Our Menu Page Ends -------*/
+
+/*------- Our Gallery Page Starts -------*/
+
+  /*------- Our Gallery Section Starts -------*/
+
+.bg-gallery-gp { margin-bottom: 0; padding: 30px 15px 15px; }
+.box-gallery-gp { margin-bottom: 15px; height: 50vh; }
+.box-gallery-gp:last-child { margin-bottom: 0; }
+
+  /*------- Our Gallery Section Ends -------*/
+
+/*------- Our Gallery Page Ends -------*/
+
+/*------- Shop Page Starts -------*/
+
+  /*------- Shop Section Starts -------*/
+
+.bg-shop-sp { margin-bottom: 0; padding: 30px 15px 15px; }
+.all-shop-items-sp > h2 { font-size: 4rem; margin-bottom: 30px; }
+.box-shop-image-info-sp { margin-bottom: 15px; }
+.pagination-listing-sp { display: block; margin-top: 0; }
+.pagination-listing-sp > li { display: block; margin: 0 0 10px 0; }
+.pagination-listing-sp > li:last-child { margin-bottom: 0; }
+
+  /*------- Shop Section Ends -------*/
+  
+/*------- Shop Page Ends -------*/
+
+/*------- Shop - Product Page Starts -------*/
+
+  /*------- Shop - Product Section Starts -------*/
+
+.bg-shop-product-spp { margin-bottom: 0; padding: 30px 15px 15px; }
+.shop-product-image-spp > img { margin-bottom: 30px; }
+.box-shop-product-info-spp > h2 { font-size: 4rem; margin-bottom: 15px; }
+.ratings-listing-spp,
+.box-shop-product-info-spp > p { margin-bottom: 15px; }
+.box-comments-heading-spp > h2 { font-size: 4rem; margin-bottom: 15px; }
+.media-comment-spp { margin-bottom: 15px; padding-bottom: 15px; }
+.media-left-comment-spp > img { height: 70px; }
+textarea.form-control-comment { margin-bottom: 15px; }
+
+  /*------- Shop - Product Section Ends -------*/
+
+/*------- Shop - Product Page Ends -------*/
+
+/*------- Shop Cart Page Starts -------*/
+
+  /*------- Shop Cart Section Starts -------*/
+
+.bg-shop-cart-scp { margin-bottom: 0; padding: 30px 15px 15px; }
+.step-wizard-listing { margin-bottom: 15px; }
+.step-wizard-listing > li { font-size: 1rem; padding-top: 80px; width: 32%; }
+.step-wizard-listing > li::before { font-size: 1.6rem; height: 40px; line-height: 40px; width: 40px; }
+.box-table-shop-cart-scp { margin-bottom: 15px; padding: 15px; }
+.shop-cart-image-scp > img { width: 100px; }
+.table-responsive-shop-cart-scp,
+.table-responsive-shop-cart-totals { border: 0; margin-bottom: 0; }
+.table-shop-cart-scp,
+.table-shop-cart-totals { border: 0; }
+.table-shop-cart-scp thead,
+.table-shop-cart-totals thead { border: none; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.table-shop-cart-scp tr,
+.table-shop-cart-totals tr { display: block; margin-bottom: 15px; }
+.table-shop-cart-scp tr:last-child,
+.table-shop-cart-totals tr:last-child { margin-bottom: 0; }
+.table-shop-cart-scp td,
+.table-shop-cart-totals td { display: block; }
+.table-shop-cart-scp td::before,
+.table-shop-cart-totals td::before { content: attr(data-label); float: left; font-weight: bold; text-transform: uppercase; }
+.table-shop-cart-scp > tbody > tr > td,
+.table-shop-checkout-scpp > tbody > tr > td,
+.table-shop-cart-totals > tbody > tr > td,
+.quantity-scp { border: 1px solid #444444; }
+.quantity-scp > input[readonly] { background-color: #444444; }
+.btn-apply-coupon { margin: 15px 0 0 0; width: 100%; }
+.btn-update-cart { width: 100%; }
+.box-shop-cart-totals-scp > h4 { font-size: 2.4rem; margin-bottom: 15px; }
+.table-shop-cart-totals > tbody > tr > td:last-child { text-align: left; }
+.table-shop-cart-totals > tbody > tr:nth-last-of-type(2) > td { font-size: 1.8rem; }
+.btn-proceed-to-checkout { background-color: #bc906b; color: #0a0a0a; height: auto; white-space: break-spaces; }
+.btn-proceed-to-checkout:hover { background-color: #ffffff; }
+.box-shop-cart-totals-scp,
+.table-shop-cart-totals > tbody > tr:last-child > td { padding: 15px; }
+
+  /*------- Shop Cart Section Ends -------*/
+
+/*------- Shop Cart Page Ends -------*/
+
+/*------- Order Complete Page Starts -------*/
+
+	/*------- Order Complete Section Starts -------*/
+
+.bg-order-complete-ocp { margin-bottom: 0; padding: 30px 15px 15px; }
+.box-order-complete { padding: 30px; }
+.box-order-complete > img { margin: 0 auto 30px; width: 100px; }
+.box-order-complete > p { margin-bottom: 30px; }
+.track-order-ocp > a { background-color: #bc906b; color: #0a0a0a; }
+.track-order-ocp > a:hover { background-color: #ffffff; }
+
+  /*------- Order Complete Section Ends -------*/
+
+/*------- Order Complete Page Ends -------*/
+
+}

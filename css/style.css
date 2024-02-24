@@ -1,0 +1,554 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Birds-of-Paradise"; src: url("../fonts/Birds-of-Paradise.ttf"); }
+@font-face { font-family: "Quicksand-Light"; src: url("../fonts/Quicksand-Light.ttf"); }
+@font-face { font-family: "Quicksand-Regular"; src: url("../fonts/Quicksand-Regular.ttf"); }
+@font-face { font-family: "Quicksand-Medium"; src: url("../fonts/Quicksand-Medium.ttf"); }
+@font-face { font-family: "Quicksand-SemiBold"; src: url("../fonts/Quicksand-SemiBold.ttf"); }
+@font-face { font-family: "Quicksand-Bold"; src: url("../fonts/Quicksand-Bold.ttf"); }
+@font-face { font-family: "GoogleSans-Bold"; src: url("../fonts/GoogleSans-Bold.ttf"); }
+@font-face { font-family: "Inception"; src: url("../fonts/Inception.ttf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 1px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+body { background-color: #000000; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+label,
+address { margin: 0; padding: 0; }
+li { list-style: none; }
+a,
+a:hover,
+a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.container-fluid { background-color: #000000; padding: 50px 100px; }
+.flex-align-center-desktop { -webkit-algn-items: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.display-none-desktop { display: none; }
+.section-heading > h2 { color: #bc906b; font: 5rem/1.2 "Birds-of-Paradise"; letter-spacing: 2px; margin-bottom: 75px; padding-bottom: 30px; position: relative; text-shadow: 2px 2px 0px rgb(255 255 255 / 10%); z-index: 1; }
+.section-heading > h2 > span { background-color: #bc906b; bottom: 0; display: block; height: 1px; left: 50%; position: absolute; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); width: 200px; z-index: -1; }
+.section-heading > h2 > span > span { background-color: #bc906b; display: block; height: 20px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%) rotate(45deg); -moz-transform: translate(-50%,-50%) rotate(45deg); -ms-transform: translate(-50%,-50%) rotate(45deg); -o-transform: translate(-50%,-50%) rotate(45deg); transform: translate(-50%,-50%) rotate(45deg); width: 20px; z-index: -1; }
+p,
+a { color: #b7b7b7; font: 1.8rem/1.7 "Quicksand-Regular"; }
+.read-more > a { color: #bc906b; display: inline-block; font: 1.8rem/1.4 "Quicksand-Regular"; padding: 10px 35px; position: relative; text-align: center; text-transform: uppercase; z-index: 1; }
+.read-more > a > span:first-child,
+.read-more > a > span:nth-child(2),
+.read-more > a > span:nth-child(3),
+.read-more > a > span:last-child { -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.read-more > a > span { background-color: #bc906b; position: absolute; z-index: 1; }
+.read-more > a > span:first-child { height: 1px; left: -15px; top: 0; width: 100%; }
+.read-more > a > span:nth-child(2) { height: 100%; left: 0; top: -15px; width: 1px; }
+.read-more > a > span:nth-child(3) { height: 100%; right: 0; top: 15px; width: 1px; }
+.read-more > a > span:last-child { bottom: 0; height: 1px; left: 15px; width: 100%; }
+.read-more > a:hover > span:first-child,
+.read-more > a:hover > span:last-child { left: 0; }
+.read-more > a:hover > span:nth-child(2),
+.read-more > a:hover > span:nth-child(3) { top: 0; }
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus { outline: 0; }
+.btn.active,
+.btn:active { -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+.form-control { border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; font: 1.6rem/1.2 "Quicksand-Regular"; height: 40px; letter-spacing: 1px; }
+.form-control:focus { -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Starts -------*/
+
+.bg-logo-burger-menu-mobile,
+.fixed-navbar-menu-mobile { display: none; }
+
+	/*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+  /*------- Desktop Logo and Navigationbar Menu Section Starts -------*/
+
+.bg-logo-navbar-menu-desktop { background-color: rgb(0 0 0 / 70%); left: 50%; padding: 0 15px; position: absolute; top: 30px; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); width: calc(100% - 200px); z-index: 10; }
+.header-logo-desktop > a > p { background-color: #000000; color: #bc906b; font: 3rem/1.2 "Birds-of-Paradise"; letter-spacing: 2px; padding: 5px; text-align: center; text-shadow: 2px 2px 0px rgb(255 255 255 / 10%); }
+.header-logo-desktop > a > p > span { color: #ffffff; }
+.menu-listing-desktop { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: flex-end; }
+.menu-listing-desktop > li { margin-right: 30px; position: relative; }
+.menu-listing-desktop > li:last-child { margin-right: 0; }
+.menu-listing-desktop > li > a { color: #ffffff; display: block; font-family: "Quicksand-Regular"; padding: 24px 0; }
+.menu-listing-desktop > li.active > a,
+.menu-listing-desktop > li > a:hover { color: #bc906b; }
+.sub-menu-listing-desktop { background-color: rgb(0 0 0 / 70%); left: 0; opacity: 0; position: absolute; top: 110%; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; visibility: hidden; width: 250px; z-index: 10; }
+.menu-listing-desktop > li:hover > a + .sub-menu-listing-desktop { opacity: 1; top: 100%; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; visibility: visible; }
+.sub-menu-listing-desktop > li { display: block; text-align: left; }
+.sub-menu-listing-desktop > li > a { border-bottom: 1px solid rgb(0 0 0 / 20%); color: #ffffff; display: block; font: 1.8rem/1.42857143 "Quicksand-Light"; padding: 10px 20px; }
+.sub-menu-listing-desktop > li:last-child > a { border-bottom: 0; }
+.sub-menu-listing-desktop > li > a:hover { background-color: #bc906b; color: #ffffff; }
+
+  /*------- Desktop Logo and Navigationbar Menu Section Ends -------*/
+
+  /*------- Banner Section Starts -------*/
+
+.banner-wrapper { height: 100%; overflow: hidden; position: relative; }
+.bg-banner { background: url("../images/banner.jpg") no-repeat fixed top/cover; height: 100vh; padding: 0; -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
+.banner-info { background-color: rgb(0 0 0 / 80%); left: 50%; padding: 30px; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); z-index: 9; }
+.banner-info > h1 { color: #bc906b; font: 2.4rem/1.2 "Quicksand-Light"; text-align: center; }
+.banner-info > h1 > span { color: #bc906b; display: block; font: 7rem/1.2 "Birds-of-Paradise"; margin-top: 15px; text-shadow: 2px 2px 0px rgb(0 0 0 / 70%); }
+.banner-info > h1 > span > span { color: #ffffff; }
+.banner-info > h4 { color: #ffffff; font: 1.8rem/1.7 "Quicksand-Light"; margin: 10px 0 30px; text-align: center; }
+.read-more-banner > a { font-size: 1.6rem; }
+
+  /*------- Banner Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.bg-about { padding: 50px 100px 65px; }
+.about-info > p { margin-bottom: 30px; }
+.box-about-image-1 > img { margin: 100px 0 0 100px; position: relative; z-index: 1; }
+.box-about-image-2,
+.box-our-services-image,
+.about-image-ap,
+.our-chefs-image-ocp { height: 100%; overflow: hidden; position: relative; width: 100%; }
+.box-about-image-2 > img,
+.box-our-services-image > img,
+.about-image-ap > img,
+.our-chefs-image-ocp > img { height: 100%; margin: 0 auto; object-fit: cover; transform-origin: left; width: 100%; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Our Services Section Starts -------*/
+
+.bg-our-services { padding: 0; }
+.box-our-services-image > img { width: 100%; }
+.our-services-section-heading > h2 { margin-bottom: 30px; }
+.box-services-info {padding: 30px; }
+.box-services-info > img { margin: 0 auto 30px; }
+.box-services-info > h3 { color: #c0a58b; font: 4rem/1.2 "Birds-of-Paradise"; margin-bottom: 15px; text-shadow: 2px 2px 0px rgb(255 255 255 / 10%); }
+
+  /*------- Our Services Section Ends -------*/
+
+  /*------- Our Menu Section Starts -------*/
+
+.bg-our-menu { padding: 50px 100px 25px; }
+.box-our-menu { border: 1px solid #c0a58b; margin-bottom: 30px; padding: 0; }
+.media-our-menu { padding: 15px; }
+.media-left-our-menu { padding-right: 15px; }
+.media-left-our-menu > img { width: 80px; }
+.media-body-our-menu > h4 { color: #c0a58b; font: 1.8rem/1.3 "Quicksand-Regular"; letter-spacing: 1.5px; margin-bottom: 5px; text-transform: uppercase; }
+.label-menu-type { background-color: #c0a58b; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; color: #000000; display: inline-block; font: 1.4rem/normal "Quicksand-Regular"; text-transform: uppercase; }
+.our-menu-price-type > p { background-color: #c0a58b; color: #000000; display: inline-block; font: 1.6rem/1.2 "Quicksand-Regular"; padding: 10px; }
+.view-more-menu { margin: 30px 0; }
+
+  /*------- Our Menu Section Ends -------*/
+
+  /*------- Special Occasions Section Starts -------*/
+
+.bg-special-occasions { background: url("../images/couple-dinner.jpg") no-repeat fixed top/cover; height: 100vh; padding: 0; position: relative; }
+.special-occasions-info { background-color: rgb(0 0 0 / 80%); left: 50%; padding: 50px; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); z-index: 1; }
+.special-occasions-info > h3 { color: #ffffff; font: 2.4rem/1.2 "Quicksand-Regular"; margin-bottom: 30px; }
+.special-occasions-info > h2 { color: #bc906b; font: 5rem/1.2 "Birds-of-Paradise"; margin-bottom: 30px; text-shadow: 2px 2px 0px rgb(255 255 255 / 25%); }
+
+  /*------- Special Occasions Section Ends -------*/
+
+  /*------- Our Gallery Section Starts -------*/
+
+.bg-our-gallery { padding: 50px 0 0; }
+.box-our-gallery { overflow: hidden; position: relative; }
+.box-our-gallery > img { -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 100%; }
+.box-our-gallery > img:hover { -webkit-filter: grayscale(100%); filter: grayscale(100%); -webkit-transform: scale(1.4) rotate(10deg); -moz-transform: scale(1.4) rotate(10deg); -ms-transform: scale(1.4) rotate(10deg); -o-transform: scale(1.4) rotate(10deg); transform: scale(1.4) rotate(10deg); }
+.view-more-about,
+.view-more-gallery { margin: 50px 0 0; }
+
+  /*------- Our Gallery Section Ends -------*/
+
+  /*------- Our Experienced Chefs Section Starts -------*/
+
+.bg-our-experienced-chefs { margin-bottom: 560px; }
+.box-our-chef { margin-bottom: 50px; overflow: hidden; position: relative; }
+.box-our-chef > img { -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 100%; }
+.box-our-chef > img:hover { -webkit-filter: grayscale(100%); filter: grayscale(100%); -webkit-transform: scale(1.15) rotate(4deg); -moz-transform: scale(1.15) rotate(4deg); -ms-transform: scale(1.15) rotate(4deg); -o-transform: scale(1.15) rotate(4deg); transform: scale(1.15) rotate(4deg); }
+.box-our-chef-info { background-color: rgb(0 0 0 / 60%); bottom: 0; left: 0; padding: 15px; position: absolute; width: 100%; z-index: 1; }
+.box-our-chef-info > h3 { color: #bc906b; font: 2.4rem/1.2 "Quicksand-SemiBold"; margin-bottom: 5px; }
+.box-our-chef-info > p { font-family: "Quicksand-Regular"; }
+
+  /*------- Our Experienced Chefs Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.bg-footer { background-color: #0a0a0a; bottom: 0; position: fixed; width: 100%; z-index: -1; }
+.footer-logo > a { display: inline-block; }
+.footer-logo > a > p { color: #bc906b; font: 5rem/1.2 "Birds-of-Paradise"; margin-bottom: 15px; text-shadow: 2px 2px 0px rgb(255 255 255 / 10%); }
+.footer-logo > a > p > span { color: #ffffff; }
+.footer-desc > p { margin: 0 auto 50px; width: 700px; }
+.footer-heading > h3 { color: #bc906b; font: 4rem/1 "Birds-of-Paradise"; margin-bottom: 15px; text-shadow: 2px 2px 0px rgb(255 255 255 / 10%); }
+.footer-contact-listing > li { display: block; margin-bottom: 15px; padding-left: 35px; position: relative; }
+.footer-contact-listing > li:first-child::before,
+.footer-contact-listing > li:nth-child(2)::before,
+.footer-contact-listing > li:nth-child(3)::before { color: #b7b7b7; content: "\f3c5"; display: block; font-family: "Font Awesome 5 Pro"; font-size: 2rem; font-weight: 900; left: 0; position: absolute; top: 0; }
+.footer-contact-listing > li:nth-child(2)::before { content: "\f0e0"; }
+.footer-contact-listing > li:nth-child(3)::before { content: "\f879"; }
+.footer-contact-listing > li:last-child { margin-bottom: 0; }
+.footer-contact-listing > li > p,
+.footer-contact-listing > li > a { color: #b7b7b7; }
+.footer-contact-listing > li > a:hover { color: #bc906b; }
+.footer-social-listing { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.footer-social-listing > li { display: inline-block; margin-right: 40px; }
+.footer-social-listing > li:last-child { margin-right: 0; }
+.footer-social-listing > li > a { color: #b7b7b7; font-size: 2.2rem; }
+.footer-social-listing > li > a:hover { color: #bc906b; }
+.footer-quick-listing { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.working-hours-listing > p > span:first-child { font-family: "Quicksand-Regular"; }
+.copyright-info > p { font-size: 1.6rem; line-height: 1.3; margin-top: 50px; }
+.copyright-info > p > span { color: #bc906b; }
+
+  /*------- Footer Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+  /*------- Banner Section Starts -------*/
+
+.banner-wrapper-inner-page { height: 100%; overflow: hidden; position: relative; }
+.black-pattern,
+.black-pattern-down-arrow { bottom: 0; left: 50%; position: absolute; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); z-index: 9; }
+.black-pattern-down-arrow { bottom: 15px; }
+.black-pattern-down-arrow > img { width: 30px; }
+.bg-banner-inner-page { background: url(../images/banner-inner-page.jpg) no-repeat fixed center/cover; height: 85vh; padding: 0; -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
+.banner-info-inner-page { background-color: rgb(0 0 0 / 80%); left: 50%; padding: 30px; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); z-index: 9; }
+.banner-info-inner-page > h1 { color: #bc906b; display: block; font: 7rem/1.2 "Birds-of-Paradise"; margin-top: 15px; text-shadow: 2px 2px 0px rgb(0 0 0 / 70%); }
+.banner-info-inner-page > h1 > span { color: #ffffff; }
+
+  /*------- Banner Section Ends -------*/
+
+  /*------- Information Section Starts -------*/
+
+.bg-about-info-ap { padding: 50px 100px 0; overflow: hidden; }
+.about-info-ap > h3 { color: #c0a58b; font: 2.4rem/1.2 "Quicksand-Light"; letter-spacing: 2px; margin-bottom: 30px; text-transform: uppercase; }
+.about-info-ap > p { color: #c0a58b; font: 10rem/1.2 "Inception"; margin-bottom: 75px; text-transform: uppercase; }
+.about-image-info-ap { padding: 75px; }
+
+  /*------- Information Section Ends -------*/
+
+  /*------- Testimonials Slider Section Starts -------*/
+
+.bg-testimonials-ap { margin-bottom: 560px; padding: 50px 100px; }
+.box-testimonials-slider-ap { background-color: #0a0a0a; padding: 30px; }
+.testimonials-slick-slider-ap .slick-slide { padding: 0 15px; }
+.testimonials-image-ap > img { -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; margin: 0 auto 30px; }
+.testimonails-info-ap > h4 { color: #bc906b; font: 2.4rem/1.2 "Quicksand-Medium"; margin-bottom: 15px; }
+.ratings-listing-ap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: center; margin-bottom: 15px; }
+.ratings-listing-ap > li { margin-right: 10px; }
+.ratings-listing-ap > li:last-child { margin-right: 0; }
+.ratings-listing-ap > li > a { color: #bc906b; font-size: 1.8rem; }
+
+    /*------- Slick Slider Arrows CSS Starts -------*/
+
+.slick-prev,
+.slick-next { background-color: #0a0a0a; height: 60px; width: 40px; }
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover { background-color: #0a0a0a; }
+.slick-prev::before,
+.slick-next::before { color: #b7b7b7; font-family: "Font Awesome 5 Pro"; font-weight: 900; }
+.slick-prev::before { content: "\f053"; }
+.slick-next::before { content: "\f054"; }
+
+    /*------- Slick Slider Arrows CSS Ends -------*/
+
+  /*------- Testimonials Slider Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Our Chefs Page Starts -------*/
+
+  /*------- Our Experienced Chefs Section Starts -------*/
+
+.bg-our-experienced-chefs-ocp { padding: 50px 100px 0; margin-bottom: 560px; overflow: hidden; }
+.our-chefs-info-ocp > h3 { color: #c0a58b; font: 2.4rem/1.2 "Quicksand-Light"; letter-spacing: 2px; margin-bottom: 30px; text-transform: uppercase; }
+.our-chefs-info-ocp > p { color: #c0a58b; font: 10rem/1.2 "Inception"; margin-bottom: 50px; text-transform: uppercase; }
+.our-chefs-image-ocp,
+.our-chefs-hd-ocp { margin-bottom: 100px; }
+.our-chefs-hd-ocp { padding: 30px; }
+.our-chefs-hd-ocp > h2 { margin-bottom: 15px; padding-bottom: 15px; }
+.our-chefs-hd-ocp > h2 > span,
+.our-chefs-right-hd-ocp > h2 > span { left: 0; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; transform: none; }
+.our-chefs-right-hd-ocp > h2 > span { left: auto; right: 0; }
+.our-chefs-hd-ocp > p:first-of-type { color: #ffffff; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase; }
+.our-chefs-left-hd-ocp { background-color: #0a0a0a; margin-left: -50px; }
+.our-chefs-right-hd-ocp { background-color: #0a0a0a; margin-right: -50px; }
+
+  /*------- Our Experienced Chefs Section Ends -------*/
+
+/*------- Our Chefs Page Ends -------*/
+
+/*------- Our Menu Page Starts -------*/
+
+  /*------- Our Menu Section Starts -------*/
+
+.bg-our-menu-omp { margin-bottom: 560px; overflow: hidden; padding: 50px 100px 20px; }
+.breakfast-menu-heading-omp,
+.lunch-menu-heading-omp,
+.dinner-menu-heading-omp { position: relative; }
+.lunch-menu-heading-omp > h2,
+.dinner-menu-heading-omp > h2 { margin-top: 30px; }
+.breakfast-lunch-dinner-vertical-heading-stroke { left: 0; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); z-index: -1; }
+.breakfast-lunch-dinner-vertical-heading-stroke > p { color: transparent; font: 7rem/normal "GoogleSans-Bold"; -webkit-text-stroke: 1px rgb(188 144 107 / 15%); text-transform: uppercase; }
+
+  /*------- Our Menu Section Ends -------*/
+
+/*------- Our Menu Page Ends -------*/
+
+/*------- Our Gallery Page Starts -------*/
+
+  /*------- Our Gallery Section Starts -------*/
+
+.bg-gallery-gp { margin-bottom: 560px; padding: 100px; }
+.box-gallery-gp { margin-bottom: 100px; height: 100vh; }
+.box-gallery-gp:last-child { margin-bottom: 0; }
+
+  /*------- Our Gallery Section Ends -------*/
+
+/*------- Our Gallery Page Ends -------*/
+
+/*------- Shop Page Starts -------*/
+
+  /*------- Shop Section Starts -------*/
+
+.bg-shop-sp { margin-bottom: 560px; position: relative; z-index: 9; }
+.shop-listing-vertical-heading-stroke,
+.shop-product-vertical-heading-stroke { position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); z-index: -1; }
+.shop-listing-vertical-heading-stroke > p,
+.shop-product-vertical-heading-stroke > p { color: transparent; font: 7rem/normal "GoogleSans-Bold"; -webkit-text-stroke: 1px rgb(188 144 107 / 15%); text-transform: uppercase; -webkit-writing-mode: vertical-lr; -ms-writing-mode: vertical-lr; writing-mode: vertical-lr; }
+.all-shop-items-sp > h2 { color: #bc906b; font: 5rem/1.2 "Birds-of-Paradise"; margin-bottom: 50px; text-shadow: 2px 2px 0px rgb(255 255 255 / 10%); }
+.box-shop-image-info-sp { background-color: #0a0a0a; margin-bottom: 30px; }
+.box-shop-image-info-sp > img { -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 100%; }
+.box-shop-image-info-sp:hover > img { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+.box-shop-info-sp { padding: 15px 15px 30px; }
+.box-shop-info-sp > h3 { color: #bc906b; font: 2.2rem/1.2 "Quicksand-Medium"; margin-bottom: 10px; }
+.box-shop-info-sp > p { margin-bottom: 30px; }
+.add-to-cart-shop-sp > a,
+.add-to-cart-spp > a { font-size: 1.4rem; }
+.pagination-listing-sp { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: center; margin-top: 30px; }
+.pagination-listing-sp > li { margin-right: 15px; }
+.pagination-listing-sp > li:last-child { margin-right: 0; }
+.pagination-listing-sp > li > a { border: 1px solid #bc906b; color: #b7b7b7; display: block; padding: 5px 15px; text-align: center; }
+.pagination-listing-sp > li.active > a,
+.pagination-listing-sp > li > a:hover { background-color: #bc906b; color: #ffffff; }
+
+  /*------- Shop Section Ends -------*/
+  
+/*------- Shop Page Ends -------*/
+
+/*------- Shop - Product Page Starts -------*/
+
+  /*------- Shop - Product Section Starts -------*/
+
+.bg-shop-product-spp { margin-bottom: 560px; position: relative; z-index: 9; }
+.shop-product-image-spp { height: 100%; overflow: hidden; position: relative; width: 100%; }
+.shop-product-image-spp > img { height: 100%; margin: 0 auto; object-fit: cover; transform-origin: left; width: 100%; }
+.box-shop-product-info-spp > h2 { color: #bc906b; font: 5rem/1.2 "Birds-of-Paradise"; margin-bottom: 30px; text-shadow: 2px 2px 0px rgb(255 255 255 / 10%); }
+.ratings-listing-spp { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-bottom: 30px; }
+.ratings-listing-spp > li { margin-right: 10px; }
+.ratings-listing-spp > li:last-child { margin-right: 0; }
+.ratings-listing-spp > li > a { color: #bc906b; font-size: 1.8rem; }
+.box-shop-product-info-spp > p { margin-bottom: 30px; }
+.box-shop-product-info-spp > h4 { color: #bc906b; font: 2.4rem/1.2 "Quicksand-Regular"; margin-bottom: 30px; }
+.quantity-spp { -webkit-align-items: center; align-items: center; border: 1px solid #1b1b1b; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; margin-bottom: 50px; padding: 0 15px; }
+.quantity-spp > span { margin-right: 15px; }
+.quantity-spp > input { color: #ffffff; font: 1.8rem/1.2 "Quicksand-Regular"; margin-right: 15px; text-align: center; width: 40px; }
+.quantity-spp > input[readonly] { background-color: #1b1b1b; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+.quantity-spp > span:last-child { margin-right: 0; }
+.quantity-inc-dec { color: #b7b7b7; cursor: pointer; display: inline-block; font: 1.6rem/1.2 "Quicksand-Regular"; }
+.box-comments-spp { margin-top: 50px; }
+.box-comments-heading-spp > h2 { color: #bc906b; font: 5rem/1.2 "Birds-of-Paradise"; margin-bottom: 30px; text-shadow: 2px 2px 0px rgb(255 255 255 / 10%); }
+.media-comment-spp { border-bottom: 1px solid #0a0a0a; margin-bottom: 30px; padding-bottom: 30px; }
+.media-comment-spp:last-child { border-bottom: 0; }
+.media-left-comment-spp { padding-right: 20px; }
+.media-left-comment-spp > img { -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
+.media-body-comment-spp > h4 { color: #bc906b; font: 2.4rem/1.2 "Quicksand-Medium"; margin-bottom: 10px; }
+.media-body-comment-spp > p { color: #c0a58b; margin-bottom: 10px; }
+.media-body-comment-spp > h6 { color: #b7b7b7; font: 1.8rem/1.7 "Quicksand-Regular"; }
+textarea.form-control-comment { background-color: #0a0a0a; caret-color: #b7b7b7; color: #b7b7b7; font: 1.8rem/1.4 "Quicksand-Regular"; height: 200px; margin-bottom: 30px; padding: 15px; resize: none; }
+textarea.form-control-comment::placeholder { color: #b7b7b7; opacity: 1; }
+textarea.form-control-comment:-ms-input-placeholder { color: #b7b7b7; }
+textarea.form-control-comment::-ms-input-placeholder { color: #b7b7b7; }
+.btn-submit { background-color: #bc906b; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; color: #000000; font: 1.8rem/1.2 "Quicksand-Regular"; letter-spacing: 1px; padding: 10px 15px; text-align: center; text-transform: uppercase; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.btn-submit:hover,
+.btn-submit:focus { background-color: #c0a58b; color: #000000; }
+
+  /*------- Shop - Product Section Ends -------*/
+
+/*------- Shop - Product Page Ends -------*/
+
+/*------- Shop Cart Page Starts -------*/
+
+  /*------- Shop Cart Section Starts -------*/
+
+.bg-shop-cart-scp { margin-bottom: 560px; }
+.step-wizard-listing { margin-bottom: 75px; text-align: center; }
+.step-wizard-listing > li { color: #b7b7b7; display: inline-block; font: 1.8rem/1.2 "Quicksand-Regular"; padding-top: 120px; position: relative; text-align: center; width: 20%; z-index: 1; }
+.step-wizard-listing > li:last-child { margin-right: 0; }
+.step-wizard-listing > li::before { background-color: #b7b7b7; color: #000000; content: ""; display: block; font: 1.8rem/1.2 "Quicksand-Regular"; height: 50px; left: 50%; line-height: 50px; position: absolute; text-align: center; top: 50%; transform: translate(-50%,-50%); width: 50px; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); z-index: 1; }
+.step-wizard-listing > li:first-child::before { content: "1"; }
+.step-wizard-listing > li:nth-child(2)::before { content: "2"; }
+.step-wizard-listing > li:last-child::before { content: "3"; }
+.step-wizard-listing > li::after { background-color: #b7b7b7; content: ""; height: 5px; left: 50%; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); width: 100%; z-index: -1; }
+.step-wizard-listing > li:last-child::after { display: none; }
+.step-wizard-listing > li.procedure-completed::before,
+.step-wizard-listing > li.active::before { background-color: #bc906b; color: #ffffff; }
+.step-wizard-listing > li.procedure-completed::after { background-color: #bc906b; }
+.step-wizard-listing > li.procedure-completed,
+.step-wizard-listing > li.active { color: #bc906b; }
+.box-table-shop-cart-scp { background-color: #0a0a0a; margin-bottom: 50px; padding: 50px; }
+.table-shop-cart-scp,
+.table-shop-cart-totals { margin-bottom: 0; table-layout: fixed; width: 100%; }
+.table-shop-cart-scp > thead > tr > th,
+.table-shop-checkout-scpp > thead > tr > th { background-color: #101010; border: 1px solid #171717; border-bottom: 0; color: #b7b7b7; font: 1.8rem/1.2 "Quicksand-Regular"; padding: 15px; text-transform: uppercase; }
+.table-shop-cart-scp > thead:first-child > tr:first-child > th,
+.table-shop-checkout-scpp > thead:first-child > tr:first-child > th { border-top: 1px solid #171717; }
+.table-shop-cart-scp > tbody > tr > td,
+.table-shop-checkout-scpp > tbody > tr > td { border: 1px solid #171717; color: #b7b7b7; font: 1.8rem/1.2 "Quicksand-Regular"; padding: 15px; vertical-align: middle; }
+.quantity-scp { -webkit-align-items: center; align-items: center; border: 1px solid #1b1b1b; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; padding: 0 15px; }
+.quantity-scp > span { color: #b7b7b7; margin-right: 15px; }
+.quantity-scp > input { color: #b7b7b7; font: 1.8rem/1.2 "Quicksand-Regular"; margin-right: 15px; text-align: center; width: 40px; }
+.quantity-scp > input[readonly] { background-color: #1b1b1b; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+.quantity-scp > span:last-child { margin-right: 0; }
+.form-control-coupon-code { background-color: transparent; border: 1px solid #171717; color: #b7b7b7; }
+.form-control-coupon-code:focus { border: 1px solid #171717; }
+.form-control-coupon-code::placeholder { color: #b7b7b7; opacity: 1; }
+.form-control-coupon-code:-ms-input-placeholder { color: #b7b7b7; }
+.form-control-coupon-code::-ms-input-placeholder { color: #b7b7b7; }
+.btn-apply-coupon,
+.btn-update-cart,
+.btn-proceed-to-checkout,
+.btn-proceed-to-payment { background-color: #000000; border: 0; color: #b7b7b7; display: block; font: 1.6rem/1.2 "Quicksand-Regular"; height: 40px; letter-spacing: 1px; margin: 0 0 0 15px; padding: 10px 30px; text-align: center; text-transform: uppercase; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.btn-update-cart,
+.btn-proceed-to-checkout,
+.btn-proceed-to-payment { display: inline-block; margin: 0; }
+.btn-apply-coupon:hover,
+.btn-update-cart:hover,
+.btn-proceed-to-checkout:hover,
+.btn-proceed-to-payment:hover { background-color: #bc906b; color: #000000; font-family: "Quicksand-Regular"; }
+.btn-apply-coupon:focus,
+.btn-update-cart:focus,
+.btn-proceed-to-checkout:focus,
+.btn-proceed-to-payment:focus { outline: 0; }
+.box-shop-cart-totals-scp { background-color: #0a0a0a; padding: 30px; }
+.box-shop-cart-totals-scp > h4 { background-color: #000000; color: #bc906b; font: 3rem/1.2 "Quicksand-SemiBold"; margin-bottom: 30px; padding: 10px 15px; text-align: center; text-transform: uppercase; }
+.table-shop-cart-totals { margin-bottom: 0; }
+.table-shop-cart-totals > tbody > tr > td { border-top: 0; color: #bc906b; font: 1.8rem/1.2 "Quicksand-Regular"; padding: 15px; }
+.table-shop-cart-totals > tbody > tr > td:last-child { color: #b7b7b7; text-align: right; }
+.btn-proceed-to-checkout,
+.btn-proceed-to-payment { display: block; width: 100%; }
+.table-shop-cart-totals > tbody > tr:last-child > td { padding: 15px 15px 0; }
+
+  /*------- Shop Cart Section Ends -------*/
+
+/*------- Shop Cart Page Ends -------*/
+
+/*------- Shop Checkout Page Starts -------*/
+
+  /*------- Shop Checkout Section Starts -------*/
+
+.bg-shop-checkout-scpp { margin-bottom: 560px; }
+.box-shop-checkout-scpp { background-color: #0a0a0a; padding: 30px; }
+.box-shop-checkout-scpp > p,
+.box-shop-checkout-scpp > p > a { color: #b7b7b7; font: 1.8rem/1.2 "Quicksand-Medium"; margin-bottom: 30px; text-transform: uppercase; }
+.box-shop-checkout-scpp > p > a { border-bottom: 2px solid #bc906b; color: #bc906b; display: inline-block; margin-bottom: 0; padding-bottom: 5px; }
+.box-shop-checkout-scpp > form > h5,
+.box-shop-checkout-scpp > h5 { color: #bc906b; font: 2.4rem/1.2 "Quicksand-SemiBold"; margin-bottom: 30px; text-transform: uppercase; }
+.box-shop-checkout-scpp > h5 { text-align: center; }
+.form-group-bd-scpp { margin-bottom: 30px; }
+.form-group-bd-scpp-0 { margin-bottom: 0; }
+.form-control-bd-scpp { background-color: #000000; caret-color: #b7b7b7; color: #b7b7b7; font: 1.8rem/1.4 "Quicksand-Regular"; }
+textarea.form-control-bd-scpp { height: 100px; resize: none; }
+
+    /*------- Type One Checkbox CSS Starts -------*/
+
+.label-relative { position: relative; }
+.label-block { display: block; }
+input[class="type-one-checkbox"] { display: none; }
+input[class="type-one-checkbox"] + span { background-color: #b7b7b7; display: inline-block; height: 20px; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); -webkit-transition: 0.3s linear; -moz-transition: 0.3s linear; -ms-transition: 0.3s linear; -o-transition: 0.3s linear; transition: 0.3s linear; width: 20px; }
+input[class="type-one-checkbox"] + span::after { border-color: #ffffff; border-style: solid; border-width: 0 2px 2px 0; content: ""; height: 9px; left: 50%; position: absolute; top: 45%; -webkit-transform: translate(-50%,-50%) rotate(45deg) scale(0); -moz-transform: translate(-50%,-50%) rotate(45deg) scale(0); -ms-transform: translate(-50%,-50%) rotate(45deg) scale(0); -o-transform: translate(-50%,-50%) rotate(45deg) scale(0); transform: translate(-50%,-50%) rotate(45deg) scale(0); -webkit-transition: 0.3s linear; -moz-transition: 0.3s linear; -ms-transition: 0.3s linear; -o-transition: 0.3s linear; transition: 0.3s linear; width: 5px; }
+input[class="type-one-checkbox"] + span + span { color: #b7b7b7; display: block; font: 1.8rem/1.42857143 "Quicksand-Regular"; letter-spacing: 1.5px; padding-left: 30px; }
+input[class="type-one-checkbox"]:checked + span { background-color: #bc906b; }
+input[class="type-one-checkbox"]:checked + span::after { -webkit-transform: translate(-50%,-50%) rotate(45deg) scale(1); -moz-transform: translate(-50%,-50%) rotate(45deg) scale(1); -ms-transform: translate(-50%,-50%) rotate(45deg) scale(1); -o-transform: translate(-50%,-50%) rotate(45deg) scale(1); transform: translate(-50%,-50%) rotate(45deg) scale(1); }
+
+	  /*------- Type One Checkbox CSS Ends -------*/
+  
+.label-create-account,
+.label-ship-address { margin-bottom: 30px; }
+textarea.form-control-on-scpp { height: 200px; }
+.table-shop-checkout-scpp { margin-bottom: 30px; }
+
+    /*------- Type One Radio Button CSS Starts -------*/
+
+input[class="type-one-radio-button"] { display: none; }
+input[class="type-one-radio-button"] + span { background-color: #b7b7b7; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; height: 20px; left: 0; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); -webkit-transition: 0.3s linear; -moz-transition: 0.3s linear; -ms-transition: 0.3s linear; -o-transition: 0.3s linear; transition: 0.3s linear; width: 20px; }
+input[class="type-one-radio-button"] + span::before { background-color: #0a0a0a; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; content: ""; height: 12px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%) scale(0); -moz-transform: translate(-50%,-50%) scale(0); -ms-transform: translate(-50%,-50%) scale(0); -o-transform: translate(-50%,-50%) scale(0); transform: translate(-50%,-50%) scale(0); -webkit-transition: 0.3s linear; -moz-transition: 0.3s linear; -ms-transition: 0.3s linear; -o-transition: 0.3s linear; transition: 0.3s linear; width: 12px; }
+input[class="type-one-radio-button"] + span + span { color: #b7b7b7; display: block; font: 1.8rem/1.42857143 "Quicksand-Regular"; padding-left: 30px; }
+input[class="type-one-radio-button"]:checked + span { background-color: #b7b7b7; }
+input[class="type-one-radio-button"]:checked + span::before { -webkit-transform: translate(-50%,-50%) scale(1); -moz-transform: translate(-50%,-50%) scale(1); -ms-transform: translate(-50%,-50%) scale(1); -o-transform: translate(-50%,-50%) scale(1); transform: translate(-50%,-50%) scale(1); }
+
+	  /*------- Type One Radio Button CSS Ends -------*/
+
+.label-payments-methods { margin-bottom: 15px; }
+.label-terms-conditions { margin: 30px 0; }
+input[class="type-one-checkbox"] + span.top-5 { top: 5px; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; transform: none; }
+
+  /*------- Shop Checkout Section Ends -------*/
+
+/*------- Shop Checkout Page Ends -------*/
+
+/*------- Order Complete Page Starts -------*/
+
+	/*------- Order Complete Section Starts -------*/
+
+.bg-order-complete-ocp { margin-bottom: 560px; }
+.box-order-complete { background-color: #0a0a0a; padding: 50px; }
+.box-order-complete > img { -webkit-animation: orderCompleteUpDown 2s infinite; animation: orderCompleteUpDown 2s infinite; margin: 0 auto 50px; width: 170px; }
+@-webkit-keyframes orderCompleteUpDown {
+	0% { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+	50% { -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); }
+	100% { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+}
+@-moz-keyframes orderCompleteUpDown {
+	0% { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+	50% { -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); }
+	100% { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+}
+@-ms-keyframes orderCompleteUpDown {
+	0% { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+	50% { -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); }
+	100% { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+}
+@-o-keyframes orderCompleteUpDown {
+	0% { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+	50% { -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); }
+	100% { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+}
+@keyframes orderCompleteUpDown {
+	0% { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+	50% { -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); }
+	100% { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+}
+.box-order-complete > p { margin-bottom: 50px; text-align: center; }
+.track-order-ocp > a { background-color: hsl(0, 0%, 0%); color: #b7b7b7; display: inline-block; font: 1.6rem/1.2 "Quicksand-Regular"; padding: 10px 30px; text-align: center; text-transform: uppercase; }
+.track-order-ocp > a:hover { background-color: #bc906b; color: #000000; font-family: "Quicksand-Regular"; }
+
+	/*------- Order Complete Section Ends -------*/
+
+/*------- Order Complete Page Ends -------*/
